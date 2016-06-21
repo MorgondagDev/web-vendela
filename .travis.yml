@@ -7,6 +7,7 @@ before_script:
 - npm i
 script:
 - npm test
+- npm run build
 cache:
   bundler: true
   directories:
