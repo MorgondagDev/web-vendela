@@ -11,7 +11,9 @@ cache:
   bundler: true
   directories:
   - node_modules
-before_deploy: pip install --user awscli
+before_deploy:
+  - pip install --user awscli
+  - ~/.local/bin/aws configure set preview.cloudfront true
 deploy:
   provider: script
   script: ~/.local/bin/aws s3 sync dist s3://morgondag/kim-site/ --region=eu-west-1
