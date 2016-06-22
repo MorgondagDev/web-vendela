@@ -25,6 +25,13 @@ export default class extends React.Component {
 		if(e.ctrlKey || e.shiftKey){
 			return;
 		}
+		if (e.key === 'Enter') {
+			if(this.state.timer){
+				window.clearTimeout(this.state.timer);
+			}
+			this.clearWords();
+			return;
+		}
 		if(e.keyCode === 8){
 			this.setState({input: this.state.input.slice(0,this.state.input.length-1)})
 			e.preventDefault();
