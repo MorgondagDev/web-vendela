@@ -19,3 +19,8 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
+after_deploy:
+  provider: script
+  script: ~/.local/bin/aws cloudfront create-invalidation --distribution-id $DIST_ID --paths '/*'
+  skip_cleanup: true
+
