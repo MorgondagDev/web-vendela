@@ -72,6 +72,7 @@ export default class extends React.Component {
 				<p><a href="http://morgondag-nu.tumblr.com" title="Kim Aarnseth on Tumblr">Tumblr</a></p>
 				<p><a href="https://www.youtube.com/channel/UCIGlLCIdHqDhUiao1LmAFoA" title="Kim Aarnseth on Youtube">Youtube</a></p>
 				<p><a href="https://play.spotify.com/album/11VUNuoeOLxcHR3uYWqTI5?play=true&utm_source=open.spotify.com&utm_medium=open" title="Kim Aarnseth on Spotify">Spotify</a></p>
+				<p><a href="https://soundcloud.com/morgondag/" title="Kim Aarnseth on Soundcloud">SoundCloud</a></p>
 				<p><a href="https://medium.com/morgondag" title="Kim Aarnseth on Medium">Medium</a></p>
 				<p><a href="https://github.com/morgondag" title="Kim Aarnseth Github">Github</a></p>
 				<p><a href="mailto:kim@morgondag.nu" title="Kim Aarnseth mail">Mail</a></p>
