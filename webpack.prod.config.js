@@ -1,6 +1,8 @@
-var webpack = require('webpack');
-var nib = require('nib');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+'use strict'
+const webpack = require('webpack');
+const nib = require('nib');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const RnRPlugin = require('./rnr-webpack.js');
 
 module.exports = {
   entry: [
@@ -50,6 +52,10 @@ module.exports = {
       'process.env': {
         'NODE_ENV': '"production"'
       }
+    }),
+    new RnRPlugin({
+      'file': 'src/app.jsx',
+      'parentClass': 'app-react'
     })
   ]
 };
