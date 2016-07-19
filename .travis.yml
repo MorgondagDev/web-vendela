@@ -16,7 +16,7 @@ before_deploy:
   - ~/.local/bin/aws configure set preview.cloudfront true
 deploy:
   provider: script
-  script: ~/.local/bin/aws s3 sync dist s3://morgondag/kim-site/ --region=eu-west-1
+  script: ~/.local/bin/aws s3 sync dist $BUCKET --region=eu-west-1
     --delete
   skip_cleanup: true
   on:
