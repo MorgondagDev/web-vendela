@@ -2,7 +2,7 @@
 const webpack = require('webpack');
 const nib = require('nib');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const RnRPlugin = require('./rnr-webpack.js');
+const reactRenderPlugin = require('react-render-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -33,7 +33,6 @@ module.exports = {
       ]
     }]
   },
-
   stylus: {
     use: [nib()]
   },
@@ -53,7 +52,7 @@ module.exports = {
         'NODE_ENV': '"production"'
       }
     }),
-    new RnRPlugin({
+    new reactRenderPlugin({
       'file': 'src/app.jsx',
       'parentClass': 'app-react'
     })
