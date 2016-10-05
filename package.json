@@ -1,5 +1,5 @@
 {
-  "name": "web-kim",
+  "name": "web-vendela",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MorgondagDev/web-kim.git"
+    "url": "git+https://github.com/MorgondagDev/web-vendela.git"
   },
   "keywords": [
     "morgondag"
@@ -18,9 +18,9 @@
   "author": "kim@morgondag.nu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MorgondagDev/web-kim/issues"
+    "url": "https://github.com/MorgondagDev/web-vendela/issues"
   },
-  "homepage": "https://github.com/MorgondagDev/web-kim#readme",
+  "homepage": "https://github.com/MorgondagDev/web-vendela#readme",
   "dependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^4.1.6",

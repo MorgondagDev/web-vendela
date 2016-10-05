@@ -9,7 +9,7 @@ export default class extends React.Component {
 		this.clearWords = this.clearWords.bind(this)
 
 		this.state = {
-			name:'Kim Aarnseth',
+			name:'Vendela Carlberg Larsson',
 			toggle: false,
 			timer:false,
 			input:''
@@ -52,9 +52,9 @@ export default class extends React.Component {
 
 	updateName(){
 		if(this.state.toggle){
-			this.setState({toggle:false, name:'Kim Aarnseth:'})
+			this.setState({toggle:false, name:'Vendela Carlberg Larsson:'})
 		} else {
-			this.setState({toggle:true, name:'Kim Aarnseth|'})
+			this.setState({toggle:true, name:'Vendela Carlberg Larsson|'})
 		}
 	}
 
@@ -66,21 +66,18 @@ export default class extends React.Component {
 		return(
 			<article>
 				<h1>{this.state.name} <span>{data}</span></h1>
-				<p><a href="http://twitter.com/kim_aarnseth" title="Kim Aarnseth on Twitter">Twitter</a></p>
-				<p><a href="http://morgondag.nu" title="Kim Aarnseth's Company">Morgondag</a></p>
-				<p><a href="http://instagram.com/morgondag" title="Kim Aarnseth on Instagram">Instagram</a></p>
-				<p><a href="http://morgondag-nu.tumblr.com" title="Kim Aarnseth on Tumblr">Tumblr</a></p>
-				<p><a href="https://www.youtube.com/channel/UCIGlLCIdHqDhUiao1LmAFoA" title="Kim Aarnseth on Youtube">Youtube</a></p>
-				<p><a href="https://play.spotify.com/album/11VUNuoeOLxcHR3uYWqTI5?play=true&utm_source=open.spotify.com&utm_medium=open" title="Kim Aarnseth on Spotify">Spotify</a></p>
-				<p><a href="https://soundcloud.com/morgondag/" title="Kim Aarnseth on Soundcloud">SoundCloud</a></p>
-				<p><a href="https://medium.com/morgondag" title="Kim Aarnseth on Medium">Medium</a></p>
-				<p><a href="https://github.com/morgondag" title="Kim Aarnseth Github">Github</a></p>
-				<p><a href="mailto:kim@morgondag.nu" title="Kim Aarnseth mail">Mail</a></p>
+				<p><a href="http://twitter.com/vemdel" title="Vendela Carlberg Larsson on Twitter">Twitter</a></p>
+				<p><a href="http://morgondag.nu" title="Vendela Carlberg Larsson's Company">Morgondag</a></p>
+				<p><a href="http://instagram.com/morgondag" title="Vendela Carlberg Larsson on Instagram">Instagram</a></p>
+				<p><a href="http://morgondag-nu.tumblr.com" title="Vendela Carlberg Larsson on Tumblr">Tumblr</a></p>
+				<p><a href="https://www.youtube.com/channel/UCIGlLCIdHqDhUiao1LmAFoA" title="Vendela Carlberg Larsson on Youtube">Youtube</a></p>
+				<p><a href="https://medium.com/morgondag" title="Vendela Carlberg Larsson on Medium">Medium</a></p>
+				<p><a href="https://github.com/vemdel" title="Vendela Carlberg Larsson Github">Github</a></p>
+				<p><a href="mailto:vendela@morgondag.nu" title="Vendela Carlberg Larsson mail">Mail</a></p>
 				<p><br/></p>
 				<p>Games:</p>
-				<p><a href="http://rymdresa.com/" title="Kim Aarnseth's game RymdResa">RymdResa</a></p>
-				<p><a href="https://imprint-x.com/" title="Kim Aarnseth's game RymdResa imprint-X">imprint-X</a></p>
-
+				<p><a href="http://rymdresa.com/" title="Vendela Carlberg Larsson's game RymdResa">RymdResa</a></p>
+				<p><a href="https://imprint-x.com/" title="Vendela Carlberg Larsson's game RymdResa imprint-X">imprint-X</a></p>
 			</article>
 		)
 	}
